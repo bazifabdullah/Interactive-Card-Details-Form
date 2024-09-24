@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --Red: hsl(0, 100%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+*, *>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--White);
+}
+
+.left_section {
+    min-height: 100vh;
+    width: 40%;
+    background-image: url('images/bg-main-desktop.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cards {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    left: 100%;
+    gap: 2rem;
+}
+
+.front_card {
+    position: relative;
+    right: 6rem;
+}
+
+.card_logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+#cardNumber {
+    position: absolute;
+    top: 8rem;
+    letter-spacing: 2px;
+    left: 1.7rem;
+    font-weight: 400;
+}
+
+#cardName, #cardDate {
+    position: absolute;
+    bottom: 2rem;
+    font-weight: 400;
+}
+
+#cardName {
+    left: 1.7rem;
+}
+
+#cardDate {
+    right: 1.7rem;
+}
+
+.back_card {
+    position: relative;
+    right: -2rem;
+}
+
+#cvc {
+    position: absolute;
+    top: 6.9rem;
+    right: 3.5rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
