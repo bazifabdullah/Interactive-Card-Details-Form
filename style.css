@@ -20,6 +20,14 @@ body {
     color: var(--White);
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Left Section */
+
 .left_section {
     min-height: 100vh;
     width: 40%;
@@ -84,4 +92,20 @@ body {
     right: 3.5rem;
     letter-spacing: 3px;
     font-weight: 400;
+}
+
+/* Right Section */
+
+.right_section {
+    color: #333;
+    min-height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
 }
