@@ -27,7 +27,7 @@
                     <div class="back_card">
                         <div class="card_container">
                             <img src="images/bg-card-back.png" alt="back-card">
-                            <span id="cvc">123</span>
+                            <span id="cvc">000</span>
                         </div>
                     </div>
                 </div>
@@ -42,14 +42,16 @@
                         <label for="card_number">CARD NUMBER</label>
                         <input type="text" placeholder="e.g. 1234 1234 1234 1234" maxlength="16" minlength="16" id="cardNumberInput" required>
                     </div>
-                    <div>
-                        <label for="card_date">EXP. DATE [MM / YY]</label>
-                        <input type="text" placeholder="MM" maxlength="2" minlength="2" id="expMonthInput" required>
-                        <input type="text" placeholder="YY" maxlength="2" minlength="2" id="expYearInput" required>
-                    </div>
-                    <div>
-                        <label for="card_date">CVC</label>
-                        <input type="text" placeholder="e.g. 123" maxlength="3" minlength="3" id="CVCInput" required>
+                    <div class="dateAndCVC">
+                        <div>
+                            <label for="card_date">EXP. DATE [MM / YY]</label>
+                            <input type="text" placeholder="MM" maxlength="2" minlength="2" id="expMonthInput" required>
+                            <input type="text" placeholder="YY" maxlength="2" minlength="2" id="expYearInput" required>
+                        </div>
+                        <div class="CVC_div">
+                            <label for="card_date">CVC</label>
+                            <input type="text" placeholder="e.g. 123" maxlength="3" minlength="3" id="CVCInput" required>
+                        </div>
                     </div>
                     <div class="submit_button">
                         <button type="submit" id="submitButton">Confirm</button>
