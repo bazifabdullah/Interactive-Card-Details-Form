@@ -97,7 +97,7 @@ body {
 /* Right Section */
 
 .right_section {
-    color: #333;
+    margin-left: 80px;
     min-height: 100vh;
     width: 60%;
     display: flex;
@@ -159,7 +159,7 @@ input:focus {
     margin-bottom: 40px;
 }
 
-#submitButton {
+#submitButton, #continueButton {
     width: 100%;
     border-radius: 7px;
     height: 48px;
@@ -173,6 +173,43 @@ input:focus {
     cursor: pointer;
 }
 
-#submitButton:hover {
+#submitButton:hover, #continueButton:hover {
     background-color: hsla(278, 68%, 11%, 0.842);
+}
+
+/* Form Submission State */
+
+.complete_state {
+    margin-left: 80px;
+    min-height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankYou {
+    margin: 30px auto;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--Very-dark-violet);
+}
+
+.thankYouNote {
+    margin-bottom: 30px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    color: var(--Dark-grayish-violet);
+}
+
+#continueButton {
+    width: 384px;
+}
+
+/* Hidden Class */
+
+.hidden {
+    display: none;
 }
