@@ -92,12 +92,10 @@ function validateCardNumber() {
         errorMessage.classList.add("error_msg");
         inputElement.parentElement.appendChild(errorMessage);
         inputElement.classList.add("error_border");
-        hasError = true;
     } else {
-        inputElement.classList.remove('error_border');
+        inputElement.classList.remove("error_border");
     }
 }
-
 
 submitButton.addEventListener('click', handleSubmit);
 continueButton.addEventListener('click', resetfunction);
