@@ -110,6 +110,7 @@ label {
     display: block;
     text-align: left;
     margin-bottom: 7px;
+    margin-top: 20px;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -118,7 +119,6 @@ label {
 
 input {
     font-family: "Space Grotesk", sans-serif;
-    margin-bottom: 20px;
     height: 44px;
     padding: 10px;
     border-radius: 7px;
@@ -156,10 +156,10 @@ input:focus {
 
 #CVCInput {
     width: 190px;
-    margin-bottom: 40px;
 }
 
 #submitButton, #continueButton {
+    margin-top: 40px;
     width: 100%;
     border-radius: 7px;
     height: 48px;
@@ -206,6 +206,19 @@ input:focus {
 
 #continueButton {
     width: 384px;
+}
+
+/* Error Message */
+
+.error_msg {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+.error_border {
+    border: 1px solid red;
 }
 
 /* Hidden Class */
