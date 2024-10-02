@@ -229,3 +229,27 @@ input:focus {
 
 /* Media Query */
 
+@media only screen and (max-width: 1441px) {
+    .front_card_img, .back_card_img {
+        width: 25rem;
+        height: auto;
+    }
+
+    .card_logo {
+        width: 4rem;
+    }
+
+    #cardNumber {
+        font-size: 1.75rem;
+        top: 7.5rem;
+    }
+
+    #cardName, #cardDate {
+        font-size: 0.9rem;
+        bottom: 1.7rem;
+    }
+
+    #cvc {
+        top: 6rem;
+    }
+}
