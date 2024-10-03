@@ -180,9 +180,16 @@ input:focus {
 /* Form Submission State */
 
 .complete_state {
-    margin-left: 80px;
     min-height: 100vh;
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.complete_state div {
+    max-width: 384px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,5 +258,52 @@ input:focus {
 
     #cvc {
         top: 6rem;
+    }
+
+    #form {
+        scale: 0.95;
+        margin-left: 4rem;
+    }
+
+    .complete_state div {
+        scale: 0.95;
+        margin-left: 8rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left_section {
+        min-width: 100%;
+        height: 30%;
+    }
+
+    .front_card_img, .back_card_img {
+        width: 15rem;
+        height: auto;
+    }
+
+    .cards {
+        top: 100%;
+        left: 50%;
+    }
+
+    .front_card {
+        right: 0;
+        bottom: -4.6rem;
+        z-index: 1000;
+    }
+
+    .back_card {
+        right: 0;
+        bottom: 15rem;
+    }
+
+    .right_section {
+        min-width: 100%;
+        height: 70%;
     }
 }
