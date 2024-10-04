@@ -369,6 +369,10 @@ input:focus {
         width: 80px;
     }
 
+    #CVCInput {
+        width: 130px;
+    }
+
     .complete_state div {
         scale: 0.8;
         margin-left: 0;
