@@ -365,8 +365,16 @@ input:focus {
         height: 52px;
     }
 
+    #continueButton, .complete_state div {
+        max-width: 325px;
+    }
+
     #expMonthInput, #expYearInput {
         width: 80px;
+    }
+
+    #CVCInput {
+        width: 130px;
     }
 
     .complete_state div {
