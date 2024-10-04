@@ -351,10 +351,11 @@ input:focus {
         scale: 0.8;
         margin-left: 0;
         margin-top: 20px;
+        min-width: 360px;
     }
 
     label {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     input {
@@ -372,11 +373,10 @@ input:focus {
     #expMonthInput, #expYearInput {
         width: 80px;
     }
-
+    
     #CVCInput {
-        width: 130px;
+        width: 172px;
     }
-
     .complete_state div {
         scale: 0.8;
         margin-left: 0;
