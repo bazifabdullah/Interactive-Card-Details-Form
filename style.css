@@ -38,6 +38,10 @@ body {
     position: relative;
 }
 
+.front_card_img, .back_card_img {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
 .cards {
     position: absolute;
     top: 50%;
@@ -244,6 +248,7 @@ input:focus {
 
     .card_logo {
         width: 4rem;
+        height: auto;
     }
 
     #cardNumber {
@@ -271,14 +276,20 @@ input:focus {
     }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 426px) {
     .container {
         flex-direction: column;
     }
+    
+    .cards {
+        top: 100%;
+        left: 50%;
+    }
 
     .left_section {
-        min-width: 100%;
-        height: 30%;
+        width: 100%;
+        min-height: 30vh;
+        background-image: url(images/bg-main-mobile.png);
     }
 
     .front_card_img, .back_card_img {
@@ -286,24 +297,82 @@ input:focus {
         height: auto;
     }
 
-    .cards {
-        top: 100%;
-        left: 50%;
+    .card_logo {
+        width: 2rem;
+        height: auto;
+        top: 1rem;
+        left: 1rem;
     }
 
     .front_card {
-        right: 0;
+        right: 2rem;
         bottom: -4.6rem;
         z-index: 1000;
     }
 
-    .back_card {
-        right: 0;
-        bottom: 15rem;
+    #cardNumber {
+        font-size: 1rem;
+        top: 4.5rem;
+        left: 0.9rem;
     }
 
-    .right_section {
-        min-width: 100%;
-        height: 70%;
+    #cardName, #cardDate {
+        bottom: 1rem;
+        font-size: 0.7rem;
     }
+
+    #cardName {
+        left: 1rem;
+    }
+    
+    #cardDate {
+        right: 1rem;
+    }
+
+    #cvc {
+        top: 3.65rem;
+        right: 1.5rem;
+        font-size: 0.7rem;
+    }
+
+    .back_card {
+        right: 0;
+        bottom: 10.7rem;
+        left: 2rem;
+    }
+
+    .right_section, .complete_state {
+        width: 100%;
+        min-height: 70vh;
+        margin-left: 0;
+    }
+
+    #form {
+        scale: 0.8;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input {
+        height: 52px;
+    }
+
+    #submitButton, #continueButton {
+        height: 52px;
+    }
+
+    #expMonthInput, #expYearInput {
+        width: 80px;
+    }
+
+    .complete_state div {
+        scale: 0.8;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
 }
